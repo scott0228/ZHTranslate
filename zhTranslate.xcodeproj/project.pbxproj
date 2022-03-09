@@ -45,6 +45,8 @@
 		D23FFA7827D8B9A600D4BCEC /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2827D8B9A600D4BCEC /* popup.css */; };
 		D23FFA7927D8B9A600D4BCEC /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2927D8B9A600D4BCEC /* popup.js */; };
 		D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2927D8B9A600D4BCEC /* popup.js */; };
+		D23FFA9227D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */; };
+		D23FFA9327D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,7 @@
 		D23FFA5627D8B9A600D4BCEC /* zhTranslate Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "zhTranslate Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23FFA5B27D8B9A600D4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D23FFA5C27D8B9A600D4BCEC /* zhTranslate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zhTranslate.entitlements; sourceTree = "<group>"; };
+		D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "opencc-js@1.0.3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,7 @@
 		D23FFA2127D8B9A600D4BCEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */,
 				D23FFA2227D8B9A600D4BCEC /* _locales */,
 				D23FFA2327D8B9A600D4BCEC /* images */,
 				D23FFA2427D8B9A600D4BCEC /* manifest.json */,
@@ -420,6 +424,7 @@
 				D23FFA6D27D8B9A600D4BCEC /* images in Resources */,
 				D23FFA6F27D8B9A600D4BCEC /* manifest.json in Resources */,
 				D23FFA6B27D8B9A600D4BCEC /* _locales in Resources */,
+				D23FFA9227D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */,
 				D23FFA7327D8B9A600D4BCEC /* content.js in Resources */,
 				D23FFA7927D8B9A600D4BCEC /* popup.js in Resources */,
 			);
@@ -435,6 +440,7 @@
 				D23FFA6E27D8B9A600D4BCEC /* images in Resources */,
 				D23FFA7027D8B9A600D4BCEC /* manifest.json in Resources */,
 				D23FFA6C27D8B9A600D4BCEC /* _locales in Resources */,
+				D23FFA9327D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */,
 				D23FFA7427D8B9A600D4BCEC /* content.js in Resources */,
 				D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */,
 			);
