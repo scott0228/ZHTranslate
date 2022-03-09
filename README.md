@@ -5,3 +5,5 @@
 * 設定頁面
 * 使用原生 OpenCC
 * Icon
+
+https://github.com/nk2028/opencc-js
