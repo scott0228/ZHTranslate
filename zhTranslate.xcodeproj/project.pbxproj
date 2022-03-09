@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D23FFA3227D8B9A600D4BCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA3127D8B9A600D4BCEC /* AppDelegate.swift */; };
+		D23FFA3427D8B9A600D4BCEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA3327D8B9A600D4BCEC /* SceneDelegate.swift */; };
+		D23FFA3727D8B9A600D4BCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA3527D8B9A600D4BCEC /* LaunchScreen.storyboard */; };
+		D23FFA3A27D8B9A600D4BCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA3827D8B9A600D4BCEC /* Main.storyboard */; };
+		D23FFA4327D8B9A600D4BCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA4227D8B9A600D4BCEC /* AppDelegate.swift */; };
+		D23FFA4627D8B9A600D4BCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA4427D8B9A600D4BCEC /* Main.storyboard */; };
+		D23FFA4D27D8B9A600D4BCEC /* zhTranslate Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D23FFA4C27D8B9A600D4BCEC /* zhTranslate Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D23FFA5727D8B9A600D4BCEC /* zhTranslate Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D23FFA5627D8B9A600D4BCEC /* zhTranslate Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D23FFA5D27D8B9A600D4BCEC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1827D8B9A500D4BCEC /* Main.html */; };
+		D23FFA5E27D8B9A600D4BCEC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1827D8B9A500D4BCEC /* Main.html */; };
+		D23FFA5F27D8B9A600D4BCEC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1A27D8B9A500D4BCEC /* Icon.png */; };
+		D23FFA6027D8B9A600D4BCEC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1A27D8B9A500D4BCEC /* Icon.png */; };
+		D23FFA6127D8B9A600D4BCEC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1B27D8B9A500D4BCEC /* Style.css */; };
+		D23FFA6227D8B9A600D4BCEC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1B27D8B9A500D4BCEC /* Style.css */; };
+		D23FFA6327D8B9A600D4BCEC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1C27D8B9A500D4BCEC /* Script.js */; };
+		D23FFA6427D8B9A600D4BCEC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1C27D8B9A500D4BCEC /* Script.js */; };
+		D23FFA6527D8B9A600D4BCEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA1D27D8B9A500D4BCEC /* ViewController.swift */; };
+		D23FFA6627D8B9A600D4BCEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA1D27D8B9A500D4BCEC /* ViewController.swift */; };
+		D23FFA6727D8B9A600D4BCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1E27D8B9A600D4BCEC /* Assets.xcassets */; };
+		D23FFA6827D8B9A600D4BCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA1E27D8B9A600D4BCEC /* Assets.xcassets */; };
+		D23FFA6927D8B9A600D4BCEC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA2027D8B9A600D4BCEC /* SafariWebExtensionHandler.swift */; };
+		D23FFA6A27D8B9A600D4BCEC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA2027D8B9A600D4BCEC /* SafariWebExtensionHandler.swift */; };
+		D23FFA6B27D8B9A600D4BCEC /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2227D8B9A600D4BCEC /* _locales */; };
+		D23FFA6C27D8B9A600D4BCEC /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2227D8B9A600D4BCEC /* _locales */; };
+		D23FFA6D27D8B9A600D4BCEC /* images in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2327D8B9A600D4BCEC /* images */; };
+		D23FFA6E27D8B9A600D4BCEC /* images in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2327D8B9A600D4BCEC /* images */; };
+		D23FFA6F27D8B9A600D4BCEC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2427D8B9A600D4BCEC /* manifest.json */; };
+		D23FFA7027D8B9A600D4BCEC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2427D8B9A600D4BCEC /* manifest.json */; };
+		D23FFA7127D8B9A600D4BCEC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2527D8B9A600D4BCEC /* background.js */; };
+		D23FFA7227D8B9A600D4BCEC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2527D8B9A600D4BCEC /* background.js */; };
+		D23FFA7327D8B9A600D4BCEC /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2627D8B9A600D4BCEC /* content.js */; };
+		D23FFA7427D8B9A600D4BCEC /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2627D8B9A600D4BCEC /* content.js */; };
+		D23FFA7527D8B9A600D4BCEC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2727D8B9A600D4BCEC /* popup.html */; };
+		D23FFA7627D8B9A600D4BCEC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2727D8B9A600D4BCEC /* popup.html */; };
+		D23FFA7727D8B9A600D4BCEC /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2827D8B9A600D4BCEC /* popup.css */; };
+		D23FFA7827D8B9A600D4BCEC /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2827D8B9A600D4BCEC /* popup.css */; };
+		D23FFA7927D8B9A600D4BCEC /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2927D8B9A600D4BCEC /* popup.js */; };
+		D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2927D8B9A600D4BCEC /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D23FFA4E27D8B9A600D4BCEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D23FFA1227D8B9A500D4BCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D23FFA4B27D8B9A600D4BCEC;
+			remoteInfo = "zhTranslate Extension (iOS)";
+		};
+		D23FFA5827D8B9A600D4BCEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D23FFA1227D8B9A500D4BCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D23FFA5527D8B9A600D4BCEC;
+			remoteInfo = "zhTranslate Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D23FFA8027D8B9A600D4BCEC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D23FFA4D27D8B9A600D4BCEC /* zhTranslate Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA8727D8B9A600D4BCEC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D23FFA5727D8B9A600D4BCEC /* zhTranslate Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D23FFA1927D8B9A500D4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		D23FFA1A27D8B9A500D4BCEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D23FFA1B27D8B9A500D4BCEC /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		D23FFA1C27D8B9A500D4BCEC /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		D23FFA1D27D8B9A500D4BCEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D23FFA1E27D8B9A600D4BCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D23FFA2027D8B9A600D4BCEC /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		D23FFA2227D8B9A600D4BCEC /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		D23FFA2327D8B9A600D4BCEC /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		D23FFA2427D8B9A600D4BCEC /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		D23FFA2527D8B9A600D4BCEC /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		D23FFA2627D8B9A600D4BCEC /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		D23FFA2727D8B9A600D4BCEC /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		D23FFA2827D8B9A600D4BCEC /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		D23FFA2927D8B9A600D4BCEC /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		D23FFA2E27D8B9A600D4BCEC /* zhTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23FFA3127D8B9A600D4BCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D23FFA3327D8B9A600D4BCEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D23FFA3627D8B9A600D4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D23FFA3927D8B9A600D4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D23FFA3B27D8B9A600D4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23FFA4027D8B9A600D4BCEC /* zhTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23FFA4227D8B9A600D4BCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D23FFA4527D8B9A600D4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D23FFA4727D8B9A600D4BCEC /* zhTranslate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zhTranslate.entitlements; sourceTree = "<group>"; };
+		D23FFA4C27D8B9A600D4BCEC /* zhTranslate Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "zhTranslate Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23FFA5127D8B9A600D4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23FFA5627D8B9A600D4BCEC /* zhTranslate Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "zhTranslate Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23FFA5B27D8B9A600D4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23FFA5C27D8B9A600D4BCEC /* zhTranslate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zhTranslate.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D23FFA2B27D8B9A600D4BCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA3D27D8B9A600D4BCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA4927D8B9A600D4BCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA5327D8B9A600D4BCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D23FFA1127D8B9A500D4BCEC = {
+			isa = PBXGroup;
+			children = (
+				D23FFA1627D8B9A500D4BCEC /* Shared (App) */,
+				D23FFA1F27D8B9A600D4BCEC /* Shared (Extension) */,
+				D23FFA3027D8B9A600D4BCEC /* iOS (App) */,
+				D23FFA4127D8B9A600D4BCEC /* macOS (App) */,
+				D23FFA5027D8B9A600D4BCEC /* iOS (Extension) */,
+				D23FFA5A27D8B9A600D4BCEC /* macOS (Extension) */,
+				D23FFA2F27D8B9A600D4BCEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D23FFA1627D8B9A500D4BCEC /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA1D27D8B9A500D4BCEC /* ViewController.swift */,
+				D23FFA1E27D8B9A600D4BCEC /* Assets.xcassets */,
+				D23FFA1727D8B9A500D4BCEC /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		D23FFA1727D8B9A500D4BCEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA1827D8B9A500D4BCEC /* Main.html */,
+				D23FFA1A27D8B9A500D4BCEC /* Icon.png */,
+				D23FFA1B27D8B9A500D4BCEC /* Style.css */,
+				D23FFA1C27D8B9A500D4BCEC /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D23FFA1F27D8B9A600D4BCEC /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA2027D8B9A600D4BCEC /* SafariWebExtensionHandler.swift */,
+				D23FFA2127D8B9A600D4BCEC /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		D23FFA2127D8B9A600D4BCEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA2227D8B9A600D4BCEC /* _locales */,
+				D23FFA2327D8B9A600D4BCEC /* images */,
+				D23FFA2427D8B9A600D4BCEC /* manifest.json */,
+				D23FFA2527D8B9A600D4BCEC /* background.js */,
+				D23FFA2627D8B9A600D4BCEC /* content.js */,
+				D23FFA2727D8B9A600D4BCEC /* popup.html */,
+				D23FFA2827D8B9A600D4BCEC /* popup.css */,
+				D23FFA2927D8B9A600D4BCEC /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D23FFA2F27D8B9A600D4BCEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA2E27D8B9A600D4BCEC /* zhTranslate.app */,
+				D23FFA4027D8B9A600D4BCEC /* zhTranslate.app */,
+				D23FFA4C27D8B9A600D4BCEC /* zhTranslate Extension.appex */,
+				D23FFA5627D8B9A600D4BCEC /* zhTranslate Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D23FFA3027D8B9A600D4BCEC /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA3127D8B9A600D4BCEC /* AppDelegate.swift */,
+				D23FFA3327D8B9A600D4BCEC /* SceneDelegate.swift */,
+				D23FFA3527D8B9A600D4BCEC /* LaunchScreen.storyboard */,
+				D23FFA3827D8B9A600D4BCEC /* Main.storyboard */,
+				D23FFA3B27D8B9A600D4BCEC /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		D23FFA4127D8B9A600D4BCEC /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA4227D8B9A600D4BCEC /* AppDelegate.swift */,
+				D23FFA4427D8B9A600D4BCEC /* Main.storyboard */,
+				D23FFA4727D8B9A600D4BCEC /* zhTranslate.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		D23FFA5027D8B9A600D4BCEC /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA5127D8B9A600D4BCEC /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		D23FFA5A27D8B9A600D4BCEC /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D23FFA5B27D8B9A600D4BCEC /* Info.plist */,
+				D23FFA5C27D8B9A600D4BCEC /* zhTranslate.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D23FFA2D27D8B9A600D4BCEC /* zhTranslate (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23FFA8127D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate (iOS)" */;
+			buildPhases = (
+				D23FFA2A27D8B9A600D4BCEC /* Sources */,
+				D23FFA2B27D8B9A600D4BCEC /* Frameworks */,
+				D23FFA2C27D8B9A600D4BCEC /* Resources */,
+				D23FFA8027D8B9A600D4BCEC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D23FFA4F27D8B9A600D4BCEC /* PBXTargetDependency */,
+			);
+			name = "zhTranslate (iOS)";
+			productName = "zhTranslate (iOS)";
+			productReference = D23FFA2E27D8B9A600D4BCEC /* zhTranslate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D23FFA3F27D8B9A600D4BCEC /* zhTranslate (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23FFA8827D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate (macOS)" */;
+			buildPhases = (
+				D23FFA3C27D8B9A600D4BCEC /* Sources */,
+				D23FFA3D27D8B9A600D4BCEC /* Frameworks */,
+				D23FFA3E27D8B9A600D4BCEC /* Resources */,
+				D23FFA8727D8B9A600D4BCEC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D23FFA5927D8B9A600D4BCEC /* PBXTargetDependency */,
+			);
+			name = "zhTranslate (macOS)";
+			productName = "zhTranslate (macOS)";
+			productReference = D23FFA4027D8B9A600D4BCEC /* zhTranslate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D23FFA4B27D8B9A600D4BCEC /* zhTranslate Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23FFA7D27D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate Extension (iOS)" */;
+			buildPhases = (
+				D23FFA4827D8B9A600D4BCEC /* Sources */,
+				D23FFA4927D8B9A600D4BCEC /* Frameworks */,
+				D23FFA4A27D8B9A600D4BCEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zhTranslate Extension (iOS)";
+			productName = "zhTranslate Extension (iOS)";
+			productReference = D23FFA4C27D8B9A600D4BCEC /* zhTranslate Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D23FFA5527D8B9A600D4BCEC /* zhTranslate Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23FFA8427D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate Extension (macOS)" */;
+			buildPhases = (
+				D23FFA5227D8B9A600D4BCEC /* Sources */,
+				D23FFA5327D8B9A600D4BCEC /* Frameworks */,
+				D23FFA5427D8B9A600D4BCEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zhTranslate Extension (macOS)";
+			productName = "zhTranslate Extension (macOS)";
+			productReference = D23FFA5627D8B9A600D4BCEC /* zhTranslate Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D23FFA1227D8B9A500D4BCEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D23FFA2D27D8B9A600D4BCEC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D23FFA3F27D8B9A600D4BCEC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D23FFA4B27D8B9A600D4BCEC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D23FFA5527D8B9A600D4BCEC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D23FFA1527D8B9A500D4BCEC /* Build configuration list for PBXProject "zhTranslate" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D23FFA1127D8B9A500D4BCEC;
+			productRefGroup = D23FFA2F27D8B9A600D4BCEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D23FFA2D27D8B9A600D4BCEC /* zhTranslate (iOS) */,
+				D23FFA3F27D8B9A600D4BCEC /* zhTranslate (macOS) */,
+				D23FFA4B27D8B9A600D4BCEC /* zhTranslate Extension (iOS) */,
+				D23FFA5527D8B9A600D4BCEC /* zhTranslate Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D23FFA2C27D8B9A600D4BCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA5F27D8B9A600D4BCEC /* Icon.png in Resources */,
+				D23FFA3727D8B9A600D4BCEC /* LaunchScreen.storyboard in Resources */,
+				D23FFA5D27D8B9A600D4BCEC /* Main.html in Resources */,
+				D23FFA6327D8B9A600D4BCEC /* Script.js in Resources */,
+				D23FFA6727D8B9A600D4BCEC /* Assets.xcassets in Resources */,
+				D23FFA3A27D8B9A600D4BCEC /* Main.storyboard in Resources */,
+				D23FFA6127D8B9A600D4BCEC /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA3E27D8B9A600D4BCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA6027D8B9A600D4BCEC /* Icon.png in Resources */,
+				D23FFA6227D8B9A600D4BCEC /* Style.css in Resources */,
+				D23FFA4627D8B9A600D4BCEC /* Main.storyboard in Resources */,
+				D23FFA6427D8B9A600D4BCEC /* Script.js in Resources */,
+				D23FFA6827D8B9A600D4BCEC /* Assets.xcassets in Resources */,
+				D23FFA5E27D8B9A600D4BCEC /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA4A27D8B9A600D4BCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA7127D8B9A600D4BCEC /* background.js in Resources */,
+				D23FFA7727D8B9A600D4BCEC /* popup.css in Resources */,
+				D23FFA7527D8B9A600D4BCEC /* popup.html in Resources */,
+				D23FFA6D27D8B9A600D4BCEC /* images in Resources */,
+				D23FFA6F27D8B9A600D4BCEC /* manifest.json in Resources */,
+				D23FFA6B27D8B9A600D4BCEC /* _locales in Resources */,
+				D23FFA7327D8B9A600D4BCEC /* content.js in Resources */,
+				D23FFA7927D8B9A600D4BCEC /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA5427D8B9A600D4BCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA7227D8B9A600D4BCEC /* background.js in Resources */,
+				D23FFA7827D8B9A600D4BCEC /* popup.css in Resources */,
+				D23FFA7627D8B9A600D4BCEC /* popup.html in Resources */,
+				D23FFA6E27D8B9A600D4BCEC /* images in Resources */,
+				D23FFA7027D8B9A600D4BCEC /* manifest.json in Resources */,
+				D23FFA6C27D8B9A600D4BCEC /* _locales in Resources */,
+				D23FFA7427D8B9A600D4BCEC /* content.js in Resources */,
+				D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D23FFA2A27D8B9A600D4BCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA6527D8B9A600D4BCEC /* ViewController.swift in Sources */,
+				D23FFA3227D8B9A600D4BCEC /* AppDelegate.swift in Sources */,
+				D23FFA3427D8B9A600D4BCEC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA3C27D8B9A600D4BCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA6627D8B9A600D4BCEC /* ViewController.swift in Sources */,
+				D23FFA4327D8B9A600D4BCEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA4827D8B9A600D4BCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA6927D8B9A600D4BCEC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FFA5227D8B9A600D4BCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23FFA6A27D8B9A600D4BCEC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D23FFA4F27D8B9A600D4BCEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D23FFA4B27D8B9A600D4BCEC /* zhTranslate Extension (iOS) */;
+			targetProxy = D23FFA4E27D8B9A600D4BCEC /* PBXContainerItemProxy */;
+		};
+		D23FFA5927D8B9A600D4BCEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D23FFA5527D8B9A600D4BCEC /* zhTranslate Extension (macOS) */;
+			targetProxy = D23FFA5827D8B9A600D4BCEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D23FFA1827D8B9A500D4BCEC /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D23FFA1927D8B9A500D4BCEC /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		D23FFA3527D8B9A600D4BCEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D23FFA3627D8B9A600D4BCEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D23FFA3827D8B9A600D4BCEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D23FFA3927D8B9A600D4BCEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D23FFA4427D8B9A600D4BCEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D23FFA4527D8B9A600D4BCEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D23FFA7B27D8B9A600D4BCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D23FFA7C27D8B9A600D4BCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D23FFA7E27D8B9A600D4BCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "zhTranslate Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_NAME = "zhTranslate Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D23FFA7F27D8B9A600D4BCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "zhTranslate Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_NAME = "zhTranslate Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D23FFA8227D8B9A600D4BCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = zhTranslate;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_NAME = zhTranslate;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D23FFA8327D8B9A600D4BCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = zhTranslate;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_NAME = zhTranslate;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D23FFA8527D8B9A600D4BCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/zhTranslate.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "zhTranslate Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_NAME = "zhTranslate Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D23FFA8627D8B9A600D4BCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/zhTranslate.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "zhTranslate Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_NAME = "zhTranslate Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D23FFA8927D8B9A600D4BCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/zhTranslate.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = zhTranslate;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_NAME = zhTranslate;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D23FFA8A27D8B9A600D4BCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/zhTranslate.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TB67C8KA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = zhTranslate;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_NAME = zhTranslate;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D23FFA1527D8B9A500D4BCEC /* Build configuration list for PBXProject "zhTranslate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23FFA7B27D8B9A600D4BCEC /* Debug */,
+				D23FFA7C27D8B9A600D4BCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23FFA7D27D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23FFA7E27D8B9A600D4BCEC /* Debug */,
+				D23FFA7F27D8B9A600D4BCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23FFA8127D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23FFA8227D8B9A600D4BCEC /* Debug */,
+				D23FFA8327D8B9A600D4BCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23FFA8427D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23FFA8527D8B9A600D4BCEC /* Debug */,
+				D23FFA8627D8B9A600D4BCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23FFA8827D8B9A600D4BCEC /* Build configuration list for PBXNativeTarget "zhTranslate (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23FFA8927D8B9A600D4BCEC /* Debug */,
+				D23FFA8A27D8B9A600D4BCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D23FFA1227D8B9A500D4BCEC /* Project object */;
+}
