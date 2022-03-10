@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "繁簡轉換",
+        "description": "中文說明."
+    },
+    "extension_description": {
+        "message": "用來轉換中文的繁簡體",
+        "description": "Description of what the extension does."
+    }
+}

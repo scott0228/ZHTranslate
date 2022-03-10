@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "default_locale": "en",
+    "default_locale": "zh-Hant",
 
     "name": "__MSG_extension_name__",
     "description": "__MSG_extension_description__",
@@ -20,7 +20,8 @@
     },
 
     "content_scripts": [{
-        "js": [ "opencc-js@1.0.3/data.min.js",
+        "js": [
+            "opencc-js@1.0.3/data.min.js",
             "opencc-js@1.0.3/data.cn2t.min.js",
             "opencc-js@1.0.3/data.t2cn.min.js",
             "opencc-js@1.0.3/bundle-browser.min.js",
