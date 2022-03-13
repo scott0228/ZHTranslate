@@ -3,13 +3,31 @@
 }
 
 body {
-    width: 100px;
+    width: 180px;
     padding: 10px;
+    margin-bottom: 30px;
 
     font-family: system-ui;
     text-align: center;
 }
-
+.switch-toggle {
+    float: left;
+    background: #242729;
+ }
+ .switch-toggle input {
+   position: absolute;
+   opacity: 0;
+ }
+ .switch-toggle input + label {
+   padding: 7px;
+   float:left;
+   color: #fff;
+   cursor: pointer;
+ }
+ .switch-toggle input:checked + label {
+   background: green;
+ }
+ 
 @media (prefers-color-scheme: dark) {
     /* Dark Mode styles go here. */
 }
