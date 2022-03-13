@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 180px;
+    min-width: 180px;
     padding: 10px;
     margin-bottom: 30px;
 
@@ -13,16 +13,18 @@ body {
 .switch-toggle {
     float: left;
     background: #242729;
+    width: 100%
  }
  .switch-toggle input {
    position: absolute;
    opacity: 0;
  }
  .switch-toggle input + label {
-   padding: 7px;
+   padding: 7px 0;
    float:left;
    color: #fff;
    cursor: pointer;
+   width: 33.3%;
  }
  .switch-toggle input:checked + label {
    background: green;
