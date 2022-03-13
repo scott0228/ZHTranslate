@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is zhTranslate. You should tell us what your extension does here.",
+        "message": "用來轉換中文的繁簡體",
         "description": "Description of what the extension does."
     }
 }
