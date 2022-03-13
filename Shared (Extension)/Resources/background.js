@@ -1,6 +1,8 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request: ", request);
+const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
 
-    if (request.greeting === "hello")
-        sendResponse({ farewell: "goodbye" });
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    // console.log("Received request: ", request.text);
+    let result = converter(request.text);
+    // console.log("result: ", result);
+    sendResponse(result);
 });

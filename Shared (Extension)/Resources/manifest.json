@@ -11,20 +11,22 @@
         "96": "images/icon-96.png",
         "128": "images/icon-128.png",
         "256": "images/icon-256.png",
-        "512": "images/icon-512.png"
+        "512": "images/icon-512.png",
+        "1024": "images/icon-1024.png"
     },
 
     "background": {
-        "scripts": [ "background.js" ],
+        "scripts": [ 
+            "opencc-js@1.0.3/data.min.js",
+            "opencc-js@1.0.3/data.cn2t.min.js",
+            "opencc-js@1.0.3/data.t2cn.min.js",
+            "opencc-js@1.0.3/bundle-browser.min.js",
+            "background.js" ],
         "persistent": false
     },
 
     "content_scripts": [{
         "js": [
-            "opencc-js@1.0.3/data.min.js",
-            "opencc-js@1.0.3/data.cn2t.min.js",
-            "opencc-js@1.0.3/data.t2cn.min.js",
-            "opencc-js@1.0.3/bundle-browser.min.js",
             "content.js"
         ],
         "matches": ["<all_urls>"]
