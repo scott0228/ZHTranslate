@@ -47,6 +47,10 @@
 		D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2927D8B9A600D4BCEC /* popup.js */; };
 		D23FFA9227D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */; };
 		D23FFA9327D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */; };
+		D2AFD5B527DD90E900A91600 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = D2AFD5B427DD90E900A91600 /* OpenCC */; };
+		D2AFD5B827DD910B00A91600 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = D2AFD5B727DD910B00A91600 /* OpenCC */; };
+		D2AFD5BA27DD914A00A91600 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = D2AFD5B927DD914A00A91600 /* OpenCC */; };
+		D2AFD5BC27DD914E00A91600 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = D2AFD5BB27DD914E00A91600 /* OpenCC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AFD5BA27DD914A00A91600 /* OpenCC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AFD5BC27DD914E00A91600 /* OpenCC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AFD5B527DD90E900A91600 /* OpenCC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AFD5B827DD910B00A91600 /* OpenCC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +175,7 @@
 				D23FFA5027D8B9A600D4BCEC /* iOS (Extension) */,
 				D23FFA5A27D8B9A600D4BCEC /* macOS (Extension) */,
 				D23FFA2F27D8B9A600D4BCEC /* Products */,
+				D2AFD5B627DD910B00A91600 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +275,13 @@
 			path = "macOS (Extension)";
 			sourceTree = "<group>";
 		};
+		D2AFD5B627DD910B00A91600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +300,9 @@
 				D23FFA4F27D8B9A600D4BCEC /* PBXTargetDependency */,
 			);
 			name = "zhTranslate (iOS)";
+			packageProductDependencies = (
+				D2AFD5B927DD914A00A91600 /* OpenCC */,
+			);
 			productName = "zhTranslate (iOS)";
 			productReference = D23FFA2E27D8B9A600D4BCEC /* zhTranslate.app */;
 			productType = "com.apple.product-type.application";
@@ -303,6 +322,9 @@
 				D23FFA5927D8B9A600D4BCEC /* PBXTargetDependency */,
 			);
 			name = "zhTranslate (macOS)";
+			packageProductDependencies = (
+				D2AFD5BB27DD914E00A91600 /* OpenCC */,
+			);
 			productName = "zhTranslate (macOS)";
 			productReference = D23FFA4027D8B9A600D4BCEC /* zhTranslate.app */;
 			productType = "com.apple.product-type.application";
@@ -320,6 +342,9 @@
 			dependencies = (
 			);
 			name = "zhTranslate Extension (iOS)";
+			packageProductDependencies = (
+				D2AFD5B427DD90E900A91600 /* OpenCC */,
+			);
 			productName = "zhTranslate Extension (iOS)";
 			productReference = D23FFA4C27D8B9A600D4BCEC /* zhTranslate Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -337,6 +362,9 @@
 			dependencies = (
 			);
 			name = "zhTranslate Extension (macOS)";
+			packageProductDependencies = (
+				D2AFD5B727DD910B00A91600 /* OpenCC */,
+			);
 			productName = "zhTranslate Extension (macOS)";
 			productReference = D23FFA5627D8B9A600D4BCEC /* zhTranslate Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -374,6 +402,9 @@
 				Base,
 			);
 			mainGroup = D23FFA1127D8B9A500D4BCEC;
+			packageReferences = (
+				D2AFD5B327DD90E900A91600 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */,
+			);
 			productRefGroup = D23FFA2F27D8B9A600D4BCEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -969,6 +1000,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2AFD5B327DD90E900A91600 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ddddxxx/SwiftyOpenCC";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2AFD5B427DD90E900A91600 /* OpenCC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2AFD5B327DD90E900A91600 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */;
+			productName = OpenCC;
+		};
+		D2AFD5B727DD910B00A91600 /* OpenCC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2AFD5B327DD90E900A91600 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */;
+			productName = OpenCC;
+		};
+		D2AFD5B927DD914A00A91600 /* OpenCC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2AFD5B327DD90E900A91600 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */;
+			productName = OpenCC;
+		};
+		D2AFD5BB27DD914E00A91600 /* OpenCC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2AFD5B327DD90E900A91600 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */;
+			productName = OpenCC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D23FFA1227D8B9A500D4BCEC /* Project object */;
 }
