@@ -16,16 +16,17 @@
     },
 
     "background": {
-        "scripts": [ "background.js" ],
+        "scripts": [ 
+            "opencc-js@1.0.3/data.min.js",
+            "opencc-js@1.0.3/data.cn2t.min.js",
+            "opencc-js@1.0.3/data.t2cn.min.js",
+            "opencc-js@1.0.3/bundle-browser.min.js",
+            "background.js" ],
         "persistent": false
     },
 
     "content_scripts": [{
         "js": [
-            "opencc-js@1.0.3/data.min.js",
-            "opencc-js@1.0.3/data.cn2t.min.js",
-            "opencc-js@1.0.3/data.t2cn.min.js",
-            "opencc-js@1.0.3/bundle-browser.min.js",
             "content.js"
         ],
         "matches": ["<all_urls>"]

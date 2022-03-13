@@ -1,27 +1,49 @@
-const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
+
+const CHINESE_REGEX = /[\u3400-\u9FBF]/;
+
+function containsChinese(text) {
+  return CHINESE_REGEX.test(text);
+}
+
+function converter(node) {
+  if (containsChinese(node.nodeValue)) {
+
+  }
+}
 
 function convert_trad(currentNode) {
-  console.log(currentNode);
   for (const node of currentNode.childNodes) {
     if (node.tagName === 'SCRIPT' || node.tagName === 'STYLE') continue;
-    if (node.nodeType === Node.TEXT_NODE) {
-      var result = converter(node.nodeValue);
-      if (result != node.nodeValue) {
-        node.nodeValue = result;
-      }
+    if (node.nodeType === Node.TEXT_NODE && containsChinese(node.nodeValue)) {
+      browser.runtime.sendMessage({ text: node.nodeValue }).then((response) => {
+        // console.log("Received response: ", response);
+        if (response != node.nodeValue ) {
+          node.nodeValue = response;
+        }
+      });
     } else if (node.tagName === 'META') {
-      if (node.name === 'description' || node.name === 'keywords')
-        node.content = converter(node.content);
-    } else if (node.tagName === 'IMG') {
-      var result = converter(node.alt);
-      if (result != node.alt) {
-        node.alt = result;
+      if ((node.name === 'description' || node.name === 'keywords') && containsChinese(node.content)) {
+        browser.runtime.sendMessage({ text: node.content }).then((response) => {
+          // console.log("Received response: ", response);
+          if (response != node.content ) {
+            node.content = response;
+          }
+        });
       }
-    } else if (node.tagName === 'INPUT' && node.type === 'button') {
-      var result = converter(node.value);
-      if (result != node.value) {
-        node.value = result;
-      }
+    } else if (node.tagName === 'IMG' && containsChinese(node.alt)) {
+      browser.runtime.sendMessage({ text: node.alt }).then((response) => {
+        // console.log("Received response: ", response);
+        if (response != node.alt ) {
+          node.alt = response;
+        }
+      });
+    } else if (node.tagName === 'INPUT' && node.type === 'button' && containsChinese(node.value)) {
+      browser.runtime.sendMessage({ text: node.value }).then((response) => {
+        // console.log("Received response: ", response);
+        if (response != node.value ) {
+          node.value = response;
+        }
+      });
     } else {
       convert_trad(node);
     }
