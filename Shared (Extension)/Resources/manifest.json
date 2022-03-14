@@ -44,5 +44,5 @@
         }
     },
 
-    "permissions": [ "nativeMessaging", "<all_urls>" ]
+    "permissions": [ "nativeMessaging" ]
 }
