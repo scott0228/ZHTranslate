@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 var options = optionsByDefault;
 
 document.querySelectorAll('label').forEach(item => {
