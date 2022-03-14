@@ -1,0 +1,3 @@
+var optionsByDefault = {
+    transferType: "hant"
+}

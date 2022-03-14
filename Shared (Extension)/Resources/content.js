@@ -1,3 +1,4 @@
+var subscription;
 
 const CHINESE_REGEX = /[\u3400-\u9FBF]/;
 
@@ -5,7 +6,7 @@ function containsChinese(text) {
   return CHINESE_REGEX.test(text);
 }
 
-function convert_trad(currentNode) {
+function convertChinese(currentNode) {
   for (const node of currentNode.childNodes) {
     if (node.tagName === 'SCRIPT' || node.tagName === 'STYLE') continue;
     if (node.nodeType === Node.TEXT_NODE && containsChinese(node.nodeValue)) {
@@ -62,24 +63,30 @@ function convert_trad(currentNode) {
           }
         });
     } else {
-      convert_trad(node);
+      convertChinese(node);
     }
   }
 }
 
 (function () {
   'use strict';
-  convert_trad(document);
+  
+  subscription = new BrowserStorageSubscription(function(options) {
+    console.log('BrowserStorageSubscription change', options);
+    convertChinese(document);
+  });
 
   const callback = (mutationsList) => {
     mutationsList.forEach((mutation) => {
       if (mutation.type == 'childList' && mutation.addedNodes.length > 0) {
         Array.from(mutation.addedNodes).find((node) => {
-          convert_trad(node);
+          convertChinese(node);
         });
       }
     });
   };
   const observer = new MutationObserver(callback);
   observer.observe(window.document.body, { childList: true, subtree: true });
+    
+    
 })();

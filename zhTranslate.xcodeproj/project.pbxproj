@@ -45,8 +45,10 @@
 		D23FFA7827D8B9A600D4BCEC /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2827D8B9A600D4BCEC /* popup.css */; };
 		D23FFA7927D8B9A600D4BCEC /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2927D8B9A600D4BCEC /* popup.js */; };
 		D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA2927D8B9A600D4BCEC /* popup.js */; };
-		D23FFA9227D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */; };
-		D23FFA9327D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */; };
+		D28B327627DF6B3200A26272 /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = D28B327527DF6B3200A26272 /* config.js */; };
+		D28B327727DF6B3200A26272 /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = D28B327527DF6B3200A26272 /* config.js */; };
+		D28B327927DFFC5D00A26272 /* BrowserStorageSubscription.js in Resources */ = {isa = PBXBuildFile; fileRef = D28B327827DFFC5D00A26272 /* BrowserStorageSubscription.js */; };
+		D28B327A27DFFC5D00A26272 /* BrowserStorageSubscription.js in Resources */ = {isa = PBXBuildFile; fileRef = D28B327827DFFC5D00A26272 /* BrowserStorageSubscription.js */; };
 		D2AFD5B527DD90E900A91600 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = D2AFD5B427DD90E900A91600 /* OpenCC */; };
 		D2AFD5B827DD910B00A91600 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = D2AFD5B727DD910B00A91600 /* OpenCC */; };
 		D2AFD5BA27DD914A00A91600 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = D2AFD5B927DD914A00A91600 /* OpenCC */; };
@@ -126,7 +128,8 @@
 		D23FFA5627D8B9A600D4BCEC /* zhTranslate Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "zhTranslate Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23FFA5B27D8B9A600D4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D23FFA5C27D8B9A600D4BCEC /* zhTranslate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zhTranslate.entitlements; sourceTree = "<group>"; };
-		D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "opencc-js@1.0.3"; sourceTree = "<group>"; };
+		D28B327527DF6B3200A26272 /* config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = config.js; sourceTree = "<group>"; };
+		D28B327827DFFC5D00A26272 /* BrowserStorageSubscription.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = BrowserStorageSubscription.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,11 +215,12 @@
 		D23FFA2127D8B9A600D4BCEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D23FFA9127D8D97C00D4BCEC /* opencc-js@1.0.3 */,
 				D23FFA2227D8B9A600D4BCEC /* _locales */,
 				D23FFA2327D8B9A600D4BCEC /* images */,
 				D23FFA2427D8B9A600D4BCEC /* manifest.json */,
 				D23FFA2527D8B9A600D4BCEC /* background.js */,
+				D28B327827DFFC5D00A26272 /* BrowserStorageSubscription.js */,
+				D28B327527DF6B3200A26272 /* config.js */,
 				D23FFA2627D8B9A600D4BCEC /* content.js */,
 				D23FFA2727D8B9A600D4BCEC /* popup.html */,
 				D23FFA2827D8B9A600D4BCEC /* popup.css */,
@@ -449,13 +453,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28B327627DF6B3200A26272 /* config.js in Resources */,
 				D23FFA7127D8B9A600D4BCEC /* background.js in Resources */,
 				D23FFA7727D8B9A600D4BCEC /* popup.css in Resources */,
 				D23FFA7527D8B9A600D4BCEC /* popup.html in Resources */,
+				D28B327927DFFC5D00A26272 /* BrowserStorageSubscription.js in Resources */,
 				D23FFA6D27D8B9A600D4BCEC /* images in Resources */,
 				D23FFA6F27D8B9A600D4BCEC /* manifest.json in Resources */,
 				D23FFA6B27D8B9A600D4BCEC /* _locales in Resources */,
-				D23FFA9227D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */,
 				D23FFA7327D8B9A600D4BCEC /* content.js in Resources */,
 				D23FFA7927D8B9A600D4BCEC /* popup.js in Resources */,
 			);
@@ -465,13 +470,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28B327727DF6B3200A26272 /* config.js in Resources */,
 				D23FFA7227D8B9A600D4BCEC /* background.js in Resources */,
 				D23FFA7827D8B9A600D4BCEC /* popup.css in Resources */,
 				D23FFA7627D8B9A600D4BCEC /* popup.html in Resources */,
+				D28B327A27DFFC5D00A26272 /* BrowserStorageSubscription.js in Resources */,
 				D23FFA6E27D8B9A600D4BCEC /* images in Resources */,
 				D23FFA7027D8B9A600D4BCEC /* manifest.json in Resources */,
 				D23FFA6C27D8B9A600D4BCEC /* _locales in Resources */,
-				D23FFA9327D8D97C00D4BCEC /* opencc-js@1.0.3 in Resources */,
 				D23FFA7427D8B9A600D4BCEC /* content.js in Resources */,
 				D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */,
 			);
