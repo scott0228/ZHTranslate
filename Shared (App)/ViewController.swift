@@ -35,14 +35,6 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
         self.webView.configuration.userContentController.add(self, name: "controller")
 
         self.webView.loadFileURL(Bundle.main.url(forResource: "Main", withExtension: "html")!, allowingReadAccessTo: Bundle.main.resourceURL!)
-        
-        var str = "鼠标里面的硅二极管坏了，导致光标分辨率降低。"
-        let converter = try! ChineseConverter(options: [.traditionalize, .twStandard, .twIdiom])
-        str = converter.convert(str)
-        print(str)
-        let converter1 = try! ChineseConverter(options: [.simplify, .twStandard, .twIdiom])
-        str = converter1.convert(str)
-        print(str)
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
