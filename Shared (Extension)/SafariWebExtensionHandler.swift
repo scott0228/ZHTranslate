@@ -12,23 +12,19 @@ import OpenCC
 let SFExtensionMessageKey = "message"
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
+    let converter = try! ChineseConverter(options: [.traditionalize, .twStandard, .twIdiom])
 
     func beginRequest(with context: NSExtensionContext) {
         
-        var str = "鼠标里面的硅二极管坏了，导致光标分辨率降低。1"
-        let converter = try! ChineseConverter(options: [.traditionalize, .twStandard, .twIdiom])
-        str = converter.convert(str)
-        print(str)
-        let converter1 = try! ChineseConverter(options: [.simplify, .twStandard, .twIdiom])
-        str = converter1.convert(str)
-        print(str)
-        
         let item = context.inputItems[0] as! NSExtensionItem
-        let message = item.userInfo?[SFExtensionMessageKey]
+        let message = item.userInfo?[SFExtensionMessageKey] as? [String: Any]
         os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@", message as! CVarArg)
-
+        
+        guard let text = message?["text"] as? String else {
+                    return
+        }
         let response = NSExtensionItem()
-        response.userInfo = [ SFExtensionMessageKey: [ "Response to": message ] ]
+        response.userInfo = [ SFExtensionMessageKey: [ "text": converter.convert(text)] ]
 
         context.completeRequest(returningItems: [response], completionHandler: nil)
     }
