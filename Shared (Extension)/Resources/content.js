@@ -98,13 +98,15 @@ function convertChinese(currentNode, transferType) {
   });
 
   const callback = (mutationsList) => {
-    mutationsList.forEach((mutation) => {
-      if (mutation.type == 'childList' && mutation.addedNodes.length > 0) {
-        Array.from(mutation.addedNodes).find((node) => {
-          convertChinese(node, transferType);
+      if (transferType) {
+        mutationsList.forEach((mutation) => {
+          if (mutation.type == 'childList' && mutation.addedNodes.length > 0) {
+            Array.from(mutation.addedNodes).find((node) => {
+              convertChinese(node, transferType);
+            });
+          }
         });
       }
-    });
   };
   const observer = new MutationObserver(callback);
   observer.observe(window.document.body, { childList: true, subtree: true });
