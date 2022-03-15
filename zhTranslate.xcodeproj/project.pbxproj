@@ -103,6 +103,7 @@
 
 /* Begin PBXFileReference section */
 		D211234927E14FB900A2881D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D211234C27E1501400A2881D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		D23FFA1927D8B9A500D4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		D23FFA1A27D8B9A500D4BCEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D23FFA1B27D8B9A500D4BCEC /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -583,6 +584,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D23FFA4527D8B9A600D4BCEC /* Base */,
+				D211234C27E1501400A2881D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -1,7 +1,8 @@
+/*jshint esversion: 6 */
 function BrowserStorageSubscription(callback) {
     browser.storage.local.get('options').then((data) => {
         var options;
-        if (isEmpty(data) || (typeof data.options == 'undefined') || typeof data.options != 'object' || typeof data.options.enableEip681UrlsOverriding != 'boolean'|| typeof data.options.enableWCUrlsOverriding != 'boolean') {
+        if (isEmpty(data) || (typeof data.options == 'undefined') || typeof data.options != 'object' || typeof data.options.transferType != 'string') {
             browser.storage.local.set({optionsByDefault})
             options = optionsByDefault;
         } else {
