@@ -12,19 +12,26 @@ import OpenCC
 let SFExtensionMessageKey = "message"
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
-    let converter = try! ChineseConverter(options: [.traditionalize, .twStandard, .twIdiom])
+    let converterT = try! ChineseConverter(options: [.traditionalize, .twStandard, .twIdiom])
+    let converterS = try! ChineseConverter(options: [.simplify, .twStandard, .twIdiom])
 
     func beginRequest(with context: NSExtensionContext) {
         
         let item = context.inputItems[0] as! NSExtensionItem
         let message = item.userInfo?[SFExtensionMessageKey] as? [String: Any]
-        os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@", message as! CVarArg)
         
         guard let text = message?["text"] as? String else {
                     return
         }
+        guard let transferType = message?["transferType"] as? String else {
+                    return
+        }
         let response = NSExtensionItem()
-        response.userInfo = [ SFExtensionMessageKey: [ "text": converter.convert(text)] ]
+        if ("hant" == transferType) {
+            response.userInfo = [ SFExtensionMessageKey: [ "text": converterT.convert(text), "transferType": transferType] ]
+        } else if ("hans" == transferType) {
+            response.userInfo = [ SFExtensionMessageKey: [ "text": converterS.convert(text), "transferType": transferType] ]
+        }
 
         context.completeRequest(returningItems: [response], completionHandler: nil)
     }
