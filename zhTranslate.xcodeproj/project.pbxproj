@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D211234527E14FB900A2881D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D211234A27E14FB900A2881D /* InfoPlist.strings */; };
+		D211234627E14FB900A2881D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D211234A27E14FB900A2881D /* InfoPlist.strings */; };
+		D211234727E14FB900A2881D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D211234A27E14FB900A2881D /* InfoPlist.strings */; };
+		D211234827E14FB900A2881D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D211234A27E14FB900A2881D /* InfoPlist.strings */; };
 		D23FFA3227D8B9A600D4BCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA3127D8B9A600D4BCEC /* AppDelegate.swift */; };
 		D23FFA3427D8B9A600D4BCEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FFA3327D8B9A600D4BCEC /* SceneDelegate.swift */; };
 		D23FFA3727D8B9A600D4BCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23FFA3527D8B9A600D4BCEC /* LaunchScreen.storyboard */; };
@@ -98,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D211234927E14FB900A2881D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D23FFA1927D8B9A500D4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		D23FFA1A27D8B9A500D4BCEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D23FFA1B27D8B9A500D4BCEC /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -199,6 +204,7 @@
 				D23FFA1A27D8B9A500D4BCEC /* Icon.png */,
 				D23FFA1B27D8B9A500D4BCEC /* Style.css */,
 				D23FFA1C27D8B9A500D4BCEC /* Script.js */,
+				D211234A27E14FB900A2881D /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D23FFA5F27D8B9A600D4BCEC /* Icon.png in Resources */,
+				D211234527E14FB900A2881D /* InfoPlist.strings in Resources */,
 				D23FFA3727D8B9A600D4BCEC /* LaunchScreen.storyboard in Resources */,
 				D23FFA5D27D8B9A600D4BCEC /* Main.html in Resources */,
 				D23FFA6327D8B9A600D4BCEC /* Script.js in Resources */,
@@ -441,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D23FFA6027D8B9A600D4BCEC /* Icon.png in Resources */,
+				D211234627E14FB900A2881D /* InfoPlist.strings in Resources */,
 				D23FFA6227D8B9A600D4BCEC /* Style.css in Resources */,
 				D23FFA4627D8B9A600D4BCEC /* Main.storyboard in Resources */,
 				D23FFA6427D8B9A600D4BCEC /* Script.js in Resources */,
@@ -462,6 +470,7 @@
 				D23FFA6F27D8B9A600D4BCEC /* manifest.json in Resources */,
 				D23FFA6B27D8B9A600D4BCEC /* _locales in Resources */,
 				D23FFA7327D8B9A600D4BCEC /* content.js in Resources */,
+				D211234727E14FB900A2881D /* InfoPlist.strings in Resources */,
 				D23FFA7927D8B9A600D4BCEC /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +488,7 @@
 				D23FFA7027D8B9A600D4BCEC /* manifest.json in Resources */,
 				D23FFA6C27D8B9A600D4BCEC /* _locales in Resources */,
 				D23FFA7427D8B9A600D4BCEC /* content.js in Resources */,
+				D211234827E14FB900A2881D /* InfoPlist.strings in Resources */,
 				D23FFA7A27D8B9A600D4BCEC /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +547,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D211234A27E14FB900A2881D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D211234927E14FB900A2881D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D23FFA1827D8B9A500D4BCEC /* Main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
