@@ -17,7 +17,7 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-let extensionBundleIdentifier = "idv.coderbug.safari.zhTranslate.Extension"
+let extensionBundleIdentifier = "idv.coderbug.safari.zhtranslator.Extension"
 
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
 

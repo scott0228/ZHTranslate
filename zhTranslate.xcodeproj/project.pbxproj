@@ -724,13 +724,14 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator.Extension;
 				PRODUCT_NAME = "zhTranslate Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -755,7 +756,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator.Extension;
 				PRODUCT_NAME = "zhTranslate Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -763,6 +764,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -795,12 +797,13 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator;
 				PRODUCT_NAME = zhTranslate;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -833,13 +836,14 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator;
 				PRODUCT_NAME = zhTranslate;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -866,12 +870,13 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator.Extension;
 				PRODUCT_NAME = "zhTranslate Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -898,12 +903,13 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator.Extension;
 				PRODUCT_NAME = "zhTranslate Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -935,11 +941,12 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator;
 				PRODUCT_NAME = zhTranslate;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -971,11 +978,12 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhTranslate;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.coderbug.safari.zhtranslator;
 				PRODUCT_NAME = zhTranslate;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
